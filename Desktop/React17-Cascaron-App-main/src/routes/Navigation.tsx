@@ -8,8 +8,8 @@ export const Navigation = () => {
   return (
     <>
       <BrowserRouter>
-        <div className='main-layout'>
 
+        <div className='main-layout'>
           <nav>
             <img src= { logo } alt='React Logo' />
               <ul>
@@ -25,7 +25,6 @@ export const Navigation = () => {
              </ul>
           </nav>
 
-
           <Routes>
             <Route path="about" element={ 
             <h1 className="text-3xl font-bold underline">
@@ -36,9 +35,9 @@ export const Navigation = () => {
             <Route path="home" element={ <h1> Home Page</h1> } />
 
             <Route path="/*" element={ <Navigate to="/home" replace /> }  />
-          </Routes>
-         
+          </Routes>         
         </div>  
+
       </BrowserRouter>
     </>
   )
